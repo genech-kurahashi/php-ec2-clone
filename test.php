@@ -1,3 +1,15 @@
 <?php
-echo("こんにちは？");
+$DBHOST = "training2025-db-instance-1-us-east-1a.c25mkwu8gg8k.us-east-1.rds.amazonaws.com";
+$DBPORT = "5432";
+$DBNAME = "salesdb";
+$DBUSER = "kurahashi";
+$DBPASS = "training2025-kurahashi";
+
+try {
+    $pdo = new PDO("pgsql:host=$DBHOST;port=$DBPORT;dbname=$DBNAME;user=$DBUSER;password=$DBPASS");
+    $rows = $pdo->query('SELECT * FROM products')->fetchAll(PDO::FETCH_ASSOC);
+    echo "<pre>", print_r($rows, true), "</pre>";
+} catch (PDOException $e) {
+    echo "DB connection failed: ", $e->getMessage();
+
 ?>
