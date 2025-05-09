@@ -13,3 +13,15 @@ try {
     echo "DB connection failed: ", $e->getMessage();
 }
 ?>
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>テストページ</title>
+  </head>
+  <body>
+    <p>htmlが表示できたよ</p>
+  </body>
+</html>
