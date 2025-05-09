@@ -22,6 +22,6 @@ try {
     <title>テストページ</title>
   </head>
   <body>
-    <p><?php echo($rows['product_name']);?></p>
+    <p><?php echo($rows);?></p>
   </body>
 </html>
