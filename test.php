@@ -22,6 +22,6 @@ try {
     <title>テストページ</title>
   </head>
   <body>
-    <p>htmlが表示できたよ</p>
+    <p><?php $rows['product_name']?></p>
   </body>
 </html>
