@@ -11,5 +11,5 @@ try {
     echo "<pre>", print_r($rows, true), "</pre>";
 } catch (PDOException $e) {
     echo "DB connection failed: ", $e->getMessage();
-
+}
 ?>
